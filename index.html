@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelad</title>
+    <link rel="shortcut icon" href="./rasmlar/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/popular-locations.css">
+    <link rel="stylesheet" href="./css/special-offers.css">
+    <link rel="stylesheet" href="./css/blogs.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+
+    <header id="home">
+        <div class="navbar">
+            <div class="container">
+                <nav>
+                    <a href="./index.html" class="logo"><img src="./rasmlar/Trevland.svg" alt=""></a>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#section1">Location</a></li>
+                        <li><a href="#blogs">Blog</a></li>
+                        <li><a href="#section2">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="navbar-menu">
+                        <button class="button-nav-mobile" onclick="scrollToFooter()">Booking now</button>
+                        <input type="checkbox" id="knopka" style="display: none;">
+                        <label for="knopka" class="knopka">☰</label>
+                        
+                        <div class="navbar576">
+                            <button class="navbar_close"
+                                onclick="document.getElementById('knopka').checked = false;">x</button>
+                            <a href="#home" onclick="document.getElementById('knopka').checked = false;">Home</a>
+                            <a href="#section1" onclick="document.getElementById('knopka').checked = false;">Location</a>
+                            <a href="#blogs" onclick="document.getElementById('knopka').checked = false;">Blog</a>
+                            <a href="#section2" onclick="document.getElementById('knopka').checked = false;">About</a>
+                            <a href="#contact" onclick="document.getElementById('knopka').checked = false;">Contact</a>
+                           
+                        </div>
+                    </div>
+
+                    <button class="button-nav" onclick="scrollToFooter()">Booking now</button>
+                    
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-main overlay container">
+            <h1>Railtrips To Here, <br> There And Everywhere!</h1>
+
+            <p>We all wish to start our year the best way possible and also according to a common belief if you have a great start to your.</p>
+            <button onclick="scrollToSection1()">Explore more</button>
+        </div>
+    </header>
+
+    <section class="popular-locations " id="section1">
+        <div class="container">
+            <h2 class="sections-header">Popular Location</h2>
+            <p class="sections-p">For every one of us, travel came first. We’ve spent years living as nomads, pioneers, and voyagers— from island hopping in the</p>
+        
+        
+            <div class="pl-card-group">
+                <a href="#section1" class="pl-card">
+                    <img src="./rasmlar/turk.png" alt="img">
+                    <div class="pl-card-text">
+                        <h3>Istanbul, Turkey</h3>
+                        <p>Istanbul is a major city in Turkey that straddles Europe. </p>
+                    </div>
+                </a>
+                <a href="#section1" class="pl-card">
+                    <img src="./rasmlar/hind.png" alt="img">
+                    <div class="pl-card-text">
+                        <h3>Kuala Lumpur, malaysia</h3>
+                        <p>A 272-step long trek leads you to this century.</p>
+                    </div>
+                </a>
+                <a href="#section1" class="pl-card">
+                    <img src="./rasmlar/korea.png" alt="img">
+                    <div class="pl-card-text">
+                        <h3>Seoul, South Korea</h3>
+                        <p>South Korea officially the Republic of Korea is a country in East Asia.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="special-offers" id="section2">
+        <h2 class="sections-header">Special Offers</h2>
+        <p style="max-width: 45%;" class="sections-p">With the New Year comes a refreshing sense of wanderlust, a longing in our souls to escape to warmer climates, </p>
+    <div class="so-card-box">
+        <p>scroll to see more <span>→</span></p>
+        <div class="so-card-group">
+            <div class="so-card">
+                <div class="image"><img src="./rasmlar/us.png" alt="image"></div>
+                <div class="so-card-text">
+                    <h3 class="so-card-title" >Statue of Liberty.</h3>
+                    <div class="so-rates">
+                        <div class="so-location"><img src="./iconlar/location.png" alt="location-icon"> <span> New York</span></div>
+                        <div class="so-star"><img src="./iconlar/star.png" alt="star-icon"> <span>4.8</span> </div>
+                    </div>
+                    <p class="so-days">4 Day 5 Nights</p>
+                    <b class="so-price">$450/<span>person</span></b>
+
+                </div>
+            </div>
+            <div class="so-card">
+                <div class="image"><img src="./rasmlar/thegr.png" alt="image"></div>
+                <div class="so-card-text">
+                    <h3 class="so-card-title" >The Great Wall </h3>
+                    <div class="so-rates">
+                        <div class="so-location"><img src="./iconlar/location.png" alt="location-icon"> <span> China</span></div>
+                        <div class="so-star"><img src="./iconlar/star.png" alt="star-icon"> <span>4.9</span> </div>
+                    </div>
+                    <p class="so-days">7 Day 8 Nights</p>
+                    <b class="so-price">$850/<span>person</span></b>
+
+                </div>
+            </div>
+            <div class="so-card">
+                <div class="image"><img src="./rasmlar/dizin.png" alt="image"></div>
+                <div class="so-card-text">
+                    <h3 class="so-card-title" >Dizin </h3>
+                    <div class="so-rates">
+                        <div class="so-location"><img src="./iconlar/location.png" alt="location-icon"> <span> Iran</span></div>
+                        <div class="so-star"><img src="./iconlar/star.png" alt="star-icon"> <span>4.6</span> </div>
+                    </div>
+                    <p class="so-days">5 Day 6 Nights</p>
+                    <b class="so-price">$550/<span>person</span></b>
+
+                </div>
+            </div>
+            <div class="so-card">
+                <div class="image"><img src="./rasmlar/sajek.png" alt="image"></div>
+                <div class="so-card-text">
+                    <h3 class="so-card-title" >Sajek Valley</h3>
+                    <div class="so-rates">
+                        <div class="so-location"><img src="./iconlar/location.png" alt="location-icon"> <span> Bangladesh</span></div>
+                        <div class="so-star"><img src="./iconlar/star.png" alt="star-icon"> <span>4.7</span> </div>
+                    </div>
+                    <p class="so-days">3 Day 4 Nights</p>
+                    <b class="so-price">$400/<span>person</span></b>
+
+                </div>
+            </div>
+            <div class="so-card">
+                <div class="image"><img src="./rasmlar/osaka.png" alt="image"></div>
+                <div class="so-card-text">
+                    <h3 class="so-card-title" >Osaka Castle</h3>
+                    <div class="so-rates">
+                        <div class="so-location"><img src="./iconlar/location.png" alt="location-icon"> <span> Japan</span></div>
+                        <div class="so-star"><img src="./iconlar/star.png" alt="star-icon"> <span>4.7</span> </div>
+                    </div>
+                    <p class="so-days">4 Day 5 Nights</p>
+                    <b class="so-price">$700/<span>person</span></b>
+
+                </div>
+            </div>
+            <div class="so-card">
+                <div class="image"><img src="./rasmlar/dizin.png" alt="image"></div>
+                <div class="so-card-text">
+                    <h3 class="so-card-title" >The Great Wall </h3>
+                    <div class="so-rates">
+                        <div class="so-location"><img src="./iconlar/location.png" alt="location-icon"> <span> China</span></div>
+                        <div class="so-star"><img src="./iconlar/star.png" alt="star-icon"> <span>4.9</span> </div>
+                    </div>
+                    <p class="so-days">7 Day 8 Nights</p>
+                    <b class="so-price">$550/<span>person</span></b>
+
+                </div>
+            </div>
+            <div class="so-card">
+                <div class="image"><img src="./rasmlar/dizin.png" alt="image"></div>
+                <div class="so-card-text">
+                    <h3 class="so-card-title" >The Great Wall </h3>
+                    <div class="so-rates">
+                        <div class="so-location"><img src="./iconlar/location.png" alt="location-icon"> <span> China</span></div>
+                        <div class="so-star"><img src="./iconlar/star.png" alt="star-icon"> <span>4.9</span> </div>
+                    </div>
+                    <p class="so-days">7 Day 8 Nights</p>
+                    <b class="so-price">$550/<span>person</span></b>
+
+                </div>
+            </div>
+            <div class="so-card">
+                <div class="image"><img src="./rasmlar/dizin.png" alt="image"></div>
+                <div class="so-card-text">
+                    <h3 class="so-card-title" >The Great Wall </h3>
+                    <div class="so-rates">
+                        <div class="so-location"><img src="./iconlar/location.png" alt="location-icon"> <span> China</span></div>
+                        <div class="so-star"><img src="./iconlar/star.png" alt="star-icon"> <span>4.9</span> </div>
+                    </div>
+                    <p class="so-days">7 Day 8 Nights</p>
+                    <b class="so-price">$550/<span>person</span></b>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="so-card-remote">
+        <span>≪</span> <div class="so-remote-box"><div class="so-remote"></div></div> <span>≫</span>
+    </div>
+    </section>
+
+    <section id="blogs" class="blogs container">
+        <h2 class="sections-header">From Blog & News</h2>
+        <p style="max-width: 40%;" class="sections-p">Welcome to Community Conversations, a new interview series featuring Intrepid travellers, creatives and activists in our community.</p>
+    
+    
+
+        <div class="b-container">
+            <div class="b-box b-left">
+                <div class="b-image">
+                    <img src="./rasmlar/banf.png" alt="main-img">
+                </div>
+                <div class="b-description">
+                    <h3 class="b-title">Banff National Park</h3>
+                    <p class="b-p">Banff National Park lies in the heart of the majestic Rocky Mountains in the province of Alberta, and showcases some of Canada's most beautiful scenery. <br> Turquoise-colored lakes, snow-capped peaks, and glaciers are all easily accessible 
+                    </p>
+                    <a class="b-link" href="mailto:">@thomasalva_adison</a>
+                </div>
+            </div>
+
+
+            <div class="b-box b-right">
+                <div class="b-section">
+                    <div class="b-section-image"><img src="./rasmlar/hishorima.png" alt="image"></div>
+                    <div class="b-section-text">
+                        <h3 class="b-section-title">The Hiroshima Peace!</h3>
+                        <p class="b-section-p">It was formally opened to the public in August that year.</p>
+                        <a href="" class="b-section-link">@shova_bd88</a>
+                    </div>
+                </div>
+
+                <div class="b-section">
+                    <div class="b-section-image"><img src="./rasmlar/faithful.png" alt="image"></div>
+                    <div class="b-section-text">
+                        <h3 class="b-section-title">The faithful prayers!</h3>
+                        <p class="b-section-p">A major pilgrimage center for Hindus, the holy city.</p>
+                        <a href="" class="b-section-link">@adem/smith</a>
+                    </div>
+                </div>
+
+                <div class="b-section">
+                    <div class="b-section-image"><img src="./rasmlar/colorful.png" alt="image"></div>
+                    <div class="b-section-text">
+                        <h3 class="b-section-title">Colourful waters!</h3>
+                        <p class="b-section-p">Forest-driven water and energy cycles are poorly.</p>
+                        <a href="" class="b-section-link">@jhon7leew</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="contact">
+
+        <div class="f-card-group container">
+            <div class="f-card"> 
+                <a href="#home"><img src="./rasmlar/logo-dark.png" alt="logo" class="f-logo"></a>
+            
+                <a class="f-contact-us"  href="mailto:@shovasatkhira88.com">
+                    <span>Contact us</span>
+                    @shovasatkhira88.com
+                </a>
+            </div>
+
+
+        
+
+            <div class="f-card">
+                <a href="#contact">Services</a>
+                <a href="#contact">About</a>
+                <a href="#contact">Our story</a>
+                <a href="#contact">Benefits</a>
+                <a href="#contact">Branding</a>
+            </div>
+            <div class="f-card">
+                <a href="#contact">Legal</a>
+                <a href="#contact">Terms & Conditions</a>
+                <a href="#contact">Privecy Policy</a>
+                <a href="#contact">Terms of use</a>
+            </div>
+            <div class="f-card">
+                <h3 class="f-subscribe">SUBSCRIBE NOW</h3>
+                <form action="#" class="formcha">
+                    <input type="email" placeholder="Email"> <button>Send</button>
+                </form>
+            </div>
+        </div>
+
+       
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

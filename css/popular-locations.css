@@ -1,0 +1,72 @@
+.popular-locations{
+
+}
+.pl-card-group{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+.pl-card{
+    img{
+        width: 100%;
+    }
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 35px 0 rgba(0, 0, 0, 0.08);
+}
+.pl-card:hover{
+    img{
+        scale: 1.1;
+    }
+}
+.pl-card-text{
+    text-align: center;
+    padding: 35px 0;
+    color: black;
+
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: rgba(0, 0, 0, 0.5);
+        max-width: 305px;
+        padding: 0 5px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .pl-card-group{
+        grid-template-columns: auto auto;
+
+    }
+}
+
+@media screen and (max-width:730px){
+    .pl-card-text{
+        padding: 20px 0;
+
+        h3{
+            font-size: 15px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 17px;
+            padding: 0 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width:450px){
+    .pl-card-group{
+        grid-template-columns:  auto;
+
+    }
+}
